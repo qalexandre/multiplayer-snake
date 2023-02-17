@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "dilo";
+  src: url("../fonts/DiloWorld-mLJLv.ttf");
+}
+
+html {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1e1e1e;
+
+  font-family: "dilo", "sans-serif";
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 90vh;
+}
+
+.join {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(119, 116, 116);
+  width: auto;
+  border-radius: 6px;
+  color: #fff;
+
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  -webkit-box-shadow: 4px 4px 8px -4px rgb(119, 116, 116);
+  -moz-box-shadow: 4px 4px 8px -4px rgb(119, 116, 116);
+  box-shadow: 4px 4px 8px -4px rgb(119, 116, 116);
+
+  padding: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.button {
+    padding: 5px;
+    border-radius: 3px;
+
+    cursor: pointer;
+
+    border: none;
+    -webkit-text-stroke-width: 0px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.button-new {
+    background-color: #21a870;
+
+
+}
+.button-join {
+    background-color: #3053c5;
+
+}

@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>MultiPlayer Snake</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="styles/style.css">
 <style>
 #gameScreen {
   display: none;
@@ -15,12 +14,12 @@
   <section class="vh-100">
     <div class="container h-100">
 
-      <div id="initialScreen" class="h-100">
-        <div class="d-flex flex-column align-items-center justify-content-center h-100">
+      <div id="initialScreen" class="join">
+        <div class="content">
             <h1>Multiplayer Snake</h1>
             <button
               type="submit"
-              class="btn btn-success"
+              class="button button-new"
               id="newGameButton"
             >
               Create New Game
@@ -31,7 +30,7 @@
             </div>
             <button
               type="submit"
-              class="btn btn-success"
+              class="button button-join"
               id="joinGameButton"
             >
               Join Game
@@ -39,8 +38,8 @@
         </div>
       </div>
 
-      <div id="gameScreen" class="h-100">
-        <div class="d-flex flex-column align-items-center justify-content-center h-100">
+      <div id="gameScreen" class="join">
+        <div class="content">
 
           <h1>Your game code is: <span id="gameCodeDisplay"></span></h1>
 
@@ -52,6 +51,6 @@
   </section>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
-  <script src="index.js"></script>
+  <script src="scripts/index.js"></script>
 </body>
 </html>
