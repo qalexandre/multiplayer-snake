@@ -8,7 +8,7 @@ socket.on("init", handleInit);
 socket.on("gameState", handleGameState);
 socket.on("gameOver", handleGameOver);
 socket.on("gameCode", handleGameCode);
-socket.on("unknownGame", handleUnknownGame);
+socket.on("unknownGame", () => console.log('teste'));
 socket.on("tooManyPlayers", handleTooManyPlayers);
 
 const gameScreen = document.getElementById("gameScreen");

@@ -1,8 +1,5 @@
-module.exports = {
-    makeid,
-  }
-  
-  function makeid(length) {
+
+  export function makeid(length: number) {
      var result           = '';
      var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
      var charactersLength = characters.length;
